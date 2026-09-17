@@ -1,0 +1,457 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    background:
+        radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.18), transparent 30%),
+        radial-gradient(circle at 80% 30%, rgba(139, 92, 246, 0.18), transparent 30%),
+        radial-gradient(circle at 50% 90%, rgba(37, 99, 235, 0.12), transparent 35%),
+        #080b18;
+
+    color: #e2e8f0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+h1,
+h2,
+h3 {
+    font-family: "Space Grotesk", sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    width: 90%;
+    margin: 20px auto;
+    padding: 18px;
+
+    text-align: right;
+
+    border: 1px solid #334155;
+    border-radius: 15px;
+
+    background: rgba(15, 23, 42, 0.8);
+}
+
+nav a {
+    display: inline-block;
+
+    margin-left: 25px;
+
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #60a5fa;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+#home {
+    min-height: 85vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.img {
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 4px solid #60a5fa;
+
+    transition: 0.4s;
+}
+
+.img:hover {
+    transform: scale(1.08);
+
+    box-shadow: 0 0 30px #60a5fa;
+
+    border-color: #a78bfa;
+}
+
+
+/* =========================
+   ABOUT ME
+========================= */
+
+#about {
+    padding: 90px 10%;
+    text-align: center;
+}
+
+
+/* About paragraph */
+
+#home p {
+    max-width: 850px;
+
+    margin: 20px auto 0;
+
+    padding: 30px 40px;
+
+    background: rgba(15, 23, 42, 0.75);
+
+    border: 1px solid rgba(96, 165, 250, 0.35);
+
+    border-radius: 18px;
+
+    color: #cbd5e1;
+
+    font-size: 17px;
+    line-height: 1.8;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    transition: 0.3s;
+}
+
+#home p:hover {
+    border-color: #60a5fa;
+
+    box-shadow: 0 0 25px rgba(96, 165, 250, 0.25);
+
+    transform: translateY(-3px);
+}
+
+
+/* Highlighted name */
+
+mark {
+    background: #60a5fa;
+
+    color: #020617;
+
+    padding: 2px 6px;
+
+    border-radius: 4px;
+}
+
+
+/* =========================
+   CERTIFICATES
+========================= */
+
+#certificate {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.certificate {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+.certificate img {
+    width: 300px;
+    height: 200px;
+
+    object-fit: cover;
+
+    border: 3px solid #60a5fa;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.certificate img:hover {
+    transform: scale(1.05);
+
+    box-shadow: 0 0 20px #60a5fa;
+
+    border-color: #a78bfa;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+#skill {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+#skill h2 {
+    margin-bottom: 40px;
+}
+
+#skill ul {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    list-style: none;
+}
+
+#skill li {
+    min-width: 150px;
+
+    padding: 18px 25px;
+
+    background: #0f172a;
+
+    border: 1px solid #334155;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+#skill li:hover {
+    transform: translateY(-7px);
+
+    color: #60a5fa;
+
+    border-color: #60a5fa;
+
+    box-shadow: 0 0 18px rgba(96, 165, 250, 0.35);
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+#projects {
+    padding: 90px 8%;
+
+    text-align: center;
+}
+
+#projects > h3 {
+    font-size: 35px;
+
+    margin-bottom: 40px;
+}
+
+.project-container {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+.project-card {
+    width: 320px;
+
+    padding: 30px;
+
+    background: #0f172a;
+
+    border: 1px solid #334155;
+
+    border-radius: 15px;
+
+    text-align: left;
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+
+    border-color: #60a5fa;
+
+    box-shadow: 0 10px 30px rgba(96, 165, 250, 0.25);
+}
+
+.project-card h2 {
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #94a3b8;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+    padding: 90px 8%;
+
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 35px;
+}
+
+#contact p {
+    margin: 15px;
+
+    font-size: 17px;
+}
+
+#contact a {
+    color: #60a5fa;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+#contact a:hover {
+    color: #a78bfa;
+
+    text-shadow: 0 0 10px #a78bfa;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 50px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-top: 1px solid #334155;
+
+    background: #020617;
+}
+
+footer a {
+    color: #e2e8f0;
+
+    text-decoration: none;
+
+    margin: 0 15px;
+
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #60a5fa;
+
+    text-shadow: 0 0 10px #60a5fa;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .certificate img {
+        width: 90%;
+        height: auto;
+    }
+
+    #home p {
+        padding: 25px 20px;
+
+        font-size: 15px;
+    }
+}
